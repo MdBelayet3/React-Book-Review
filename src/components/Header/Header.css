@@ -1,0 +1,10 @@
+nav a{
+    font-size: 18px;
+    background-color: rgb(248, 240, 240);
+}
+nav a.active{
+    background-color: white !important;
+    color: #23BE0A !important;
+    border: 2px solid #23BE0A !important;
+    border-radius: 12px !important;
+}

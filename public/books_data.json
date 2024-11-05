@@ -1,0 +1,257 @@
+[
+    {
+        "bookId": 1,
+        "bookName": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "image": "mockingbird.jpg",
+        "review": "A powerful exploration of racial injustice and moral growth.",
+        "totalPages": 281,
+        "rating": 4.8,
+        "category": "Classic",
+        "tags": [
+            "Racism",
+            "Courtroom Drama",
+            "Southern Gothic"
+        ],
+        "publisher": "J.B. Lippincott & Co.",
+        "yearOfPublishing": 1960
+    },
+    {
+        "bookId": 2,
+        "bookName": "1984",
+        "author": "George Orwell",
+        "image": "1984.jpg",
+        "review": "A chilling depiction of a dystopian society under totalitarian rule.",
+        "totalPages": 328,
+        "rating": 4.7,
+        "category": "Dystopian",
+        "tags": [
+            "Totalitarianism",
+            "Surveillance",
+            "Political Fiction"
+        ],
+        "publisher": "Secker & Warburg",
+        "yearOfPublishing": 1949
+    },
+    {
+        "bookId": 3,
+        "bookName": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "image": "gatsby.jpg",
+        "review": "An evocative critique of the American Dream and social stratification.",
+        "totalPages": 180,
+        "rating": 4.5,
+        "category": "Classic",
+        "tags": [
+            "Wealth",
+            "Love",
+            "American Dream"
+        ],
+        "publisher": "Charles Scribner's Sons",
+        "yearOfPublishing": 1925
+    },
+    {
+        "bookId": 4,
+        "bookName": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "image": "pride_prejudice.jpg",
+        "review": "A timeless romantic comedy of manners and society.",
+        "totalPages": 279,
+        "rating": 4.6,
+        "category": "Romance",
+        "tags": [
+            "Love",
+            "Society",
+            "Marriage"
+        ],
+        "publisher": "T. Egerton, Whitehall",
+        "yearOfPublishing": 1813
+    },
+    {
+        "bookId": 5,
+        "bookName": "Moby-Dick",
+        "author": "Herman Melville",
+        "image": "moby_dick.jpg",
+        "review": "An epic tale of obsession and adventure on the high seas.",
+        "totalPages": 635,
+        "rating": 4.3,
+        "category": "Adventure",
+        "tags": [
+            "Adventure",
+            "Sea",
+            "Obsession"
+        ],
+        "publisher": "Harper & Brothers",
+        "yearOfPublishing": 1851
+    },
+    {
+        "bookId": 6,
+        "bookName": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "image": "catcher_rye.jpg",
+        "review": "A defining novel about teenage alienation and rebellion.",
+        "totalPages": 214,
+        "rating": 4.2,
+        "category": "Literature",
+        "tags": [
+            "Teenage",
+            "Alienation",
+            "Rebellion"
+        ],
+        "publisher": "Little, Brown and Company",
+        "yearOfPublishing": 1951
+    },
+    {
+        "bookId": 7,
+        "bookName": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "image": "hobbit.jpg",
+        "review": "An enchanting prelude to the Lord of the Rings saga.",
+        "totalPages": 310,
+        "rating": 4.8,
+        "category": "Fantasy",
+        "tags": [
+            "Fantasy",
+            "Adventure",
+            "Epic"
+        ],
+        "publisher": "George Allen & Unwin",
+        "yearOfPublishing": 1937
+    },
+    {
+        "bookId": 8,
+        "bookName": "War and Peace",
+        "author": "Leo Tolstoy",
+        "image": "war_peace.jpg",
+        "review": "A monumental epic of Russian society and Napoleonic wars.",
+        "totalPages": 1225,
+        "rating": 4.4,
+        "category": "Historical Fiction",
+        "tags": [
+            "War",
+            "Society",
+            "Epic"
+        ],
+        "publisher": "The Russian Messenger",
+        "yearOfPublishing": 1869
+    },
+    {
+        "bookId": 9,
+        "bookName": "The Alchemist",
+        "author": "Paulo Coelho",
+        "image": "alchemist.jpg",
+        "review": "A philosophical story about following one's dreams and destiny.",
+        "totalPages": 167,
+        "rating": 4.3,
+        "category": "Fiction",
+        "tags": [
+            "Adventure",
+            "Philosophy",
+            "Self-discovery"
+        ],
+        "publisher": "HarperTorch",
+        "yearOfPublishing": 1988
+    },
+    {
+        "bookId": 10,
+        "bookName": "Brave New World",
+        "author": "Aldous Huxley",
+        "image": "brave_new_world.jpg",
+        "review": "A visionary look at a future controlled by technology and conformity.",
+        "totalPages": 311,
+        "rating": 4.5,
+        "category": "Dystopian",
+        "tags": [
+            "Technology",
+            "Society",
+            "Future"
+        ],
+        "publisher": "Chatto & Windus",
+        "yearOfPublishing": 1932
+    },
+    {
+        "bookId": 11,
+        "bookName": "Jane Eyre",
+        "author": "Charlotte Bront\u00eb",
+        "image": "jane_eyre.jpg",
+        "review": "A story of love, independence, and resilience in the face of hardship.",
+        "totalPages": 500,
+        "rating": 4.7,
+        "category": "Classic",
+        "tags": [
+            "Love",
+            "Independence",
+            "Gothic"
+        ],
+        "publisher": "Smith, Elder & Co.",
+        "yearOfPublishing": 1847
+    },
+    {
+        "bookId": 12,
+        "bookName": "The Odyssey",
+        "author": "Homer",
+        "image": "odyssey.jpg",
+        "review": "A legendary tale of heroism, journey, and homecoming.",
+        "totalPages": 541,
+        "rating": 4.6,
+        "category": "Epic",
+        "tags": [
+            "Adventure",
+            "Mythology",
+            "Heroism"
+        ],
+        "publisher": "Ancient Greece",
+        "yearOfPublishing": -800
+    },
+    {
+        "bookId": 13,
+        "bookName": "The Brothers Karamazov",
+        "author": "Fyodor Dostoevsky",
+        "image": "brothers_karamazov.jpg",
+        "review": "A philosophical exploration of faith, free will, and morality.",
+        "totalPages": 824,
+        "rating": 4.7,
+        "category": "Philosophical Fiction",
+        "tags": [
+            "Philosophy",
+            "Family",
+            "Morality"
+        ],
+        "publisher": "The Russian Messenger",
+        "yearOfPublishing": 1880
+    },
+    {
+        "bookId": 14,
+        "bookName": "Crime and Punishment",
+        "author": "Fyodor Dostoevsky",
+        "image": "crime_punishment.jpg",
+        "review": "A deep dive into guilt and redemption within a psychological thriller.",
+        "totalPages": 671,
+        "rating": 4.8,
+        "category": "Psychological Fiction",
+        "tags": [
+            "Crime",
+            "Guilt",
+            "Redemption"
+        ],
+        "publisher": "The Russian Messenger",
+        "yearOfPublishing": 1866
+    },
+    {
+        "bookId": 15,
+        "bookName": "The Lord of the Rings",
+        "author": "J.R.R. Tolkien",
+        "image": "lord_rings.jpg",
+        "review": "A sweeping saga of good versus evil in an epic fantasy world.",
+        "totalPages": 1178,
+        "rating": 4.9,
+        "category": "Fantasy",
+        "tags": [
+            "Fantasy",
+            "Epic",
+            "Adventure"
+        ],
+        "publisher": "George Allen & Unwin",
+        "yearOfPublishing": 1954
+    }
+]
