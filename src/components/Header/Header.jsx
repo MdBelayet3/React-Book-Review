@@ -5,9 +5,9 @@ const Header = () => {
 
     const links = <>
                     <li><NavLink to="/">Home</NavLink></li>
-                    <li><NavLink to="">Listed Books</NavLink></li>
-                    <li><NavLink to="">Page to Read</NavLink></li>
-                    <li><Link to="">Add to Card</Link></li>
+                    <li><NavLink to="/listed-books">Listed Books</NavLink></li>
+                    <li><NavLink to="/page-read">Page to Read</NavLink></li>
+                    <li><Link to="/add-card">Add to Card</Link></li>
                 </>
 
     return (
