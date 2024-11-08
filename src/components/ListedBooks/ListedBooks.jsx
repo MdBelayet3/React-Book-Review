@@ -1,7 +1,9 @@
-import { NavLink, useLoaderData } from "react-router-dom";
+import { useLoaderData } from "react-router-dom";
 import { getBookFromStoredCard } from "../../utilities/localStorage";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 import ReadBook from "../ReadBook/ReadBook";
+import { useState } from "react";
+import './ListedBooks.css'
 
 const ListedBooks = () => {
 
@@ -12,8 +14,26 @@ const ListedBooks = () => {
     console.log(storedReadBooks);
     const storedWishBooks = getBookFromStoredCard('wish-book');
     console.log(storedWishBooks);
-    const readBooks = books.filter(book => storedReadBooks.includes(book.bookId) );
-    console.log(readBooks);
+    const readBooks = books.filter(book => storedReadBooks.includes(book.bookId));
+    const wishBooks = books.filter(book => storedWishBooks.includes(book.bookId));
+
+    const [activeRead, setActiveRead] = useState(true);
+    const [activeWish, setActiveWish] = useState(false);
+    const [displayBook, setDisplayBook] = useState(readBooks);
+
+    const handleReadOrWishListBtn = (btnName) => {
+        if(btnName === 'read-book'){
+            setDisplayBook(readBooks);
+            setActiveRead(true);
+            setActiveWish(false);
+        }
+        else if(btnName === 'wish-book'){
+            setDisplayBook(wishBooks);
+            setActiveRead(false);
+            setActiveWish(true);
+        }
+
+    }
 
     return (
         <div>
@@ -28,13 +48,13 @@ const ListedBooks = () => {
                     </ul>
                 </details>
             </div>
-            <div className="text-[#13131380] text-xl font-bold flex gap-6">
-                <NavLink><button className=" ">Read Books</button></NavLink>
-                <NavLink><button className=" ">Wish Books</button></NavLink>
+            <div className="flex gap-6 my-5 md:my-10">
+                <button onClick={() => handleReadOrWishListBtn('read-book')} className={`btn ${activeRead ? 'active' : ''}`}>Read Book</button>
+                <button onClick={() => handleReadOrWishListBtn('wish-book')} className={`btn ${activeWish ? 'active' : ''}`}>Wish Book</button>
             </div>
             <div className="flex flex-col gap-7">
                 {
-                    readBooks.map(book => <ReadBook key={book.bookId} book={book}></ReadBook>)
+                    displayBook.map(book => <ReadBook key={book.bookId} book={book}></ReadBook>)
                 }
             </div>
         </div>

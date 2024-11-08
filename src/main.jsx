@@ -12,6 +12,7 @@ import Home from './components/Home/Home.jsx';
 import ErrorPage from './components/ErrorPage/ErrorPage.jsx';
 import ListedBooks from './components/ListedBooks/ListedBooks.jsx';
 import BookDetails from './components/BookDetails/BookDetails.jsx';
+import PageRead from './components/PageRead/PageRead.jsx';
 
 const router = createBrowserRouter([
   {
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
         path: '/book/:id',
         element: <BookDetails></BookDetails>,
         loader: () => fetch('books_data.json') //warning : Not a good way to display one data from many data
+      },
+      {
+        path: '/page-read',
+        element: <PageRead></PageRead>
       }
     ]
   },

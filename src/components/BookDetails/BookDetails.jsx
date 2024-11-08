@@ -1,4 +1,4 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useNavigate, useParams } from "react-router-dom";
 import './BookDetails.css'
 import { saveBookToStoredCard } from "../../utilities/localStorage";
 import { ToastContainer, toast } from 'react-toastify';
@@ -7,8 +7,9 @@ import { useState } from "react";
 
 const BookDetails = () => {
     const books = useLoaderData();
-
     const { id } = useParams();
+    const navigate = useNavigate();
+
     const intId = parseInt(id);
     const book = books.find(book => book.bookId === intId);
     console.log(book);
@@ -79,7 +80,8 @@ const BookDetails = () => {
                 </table>
                 <div>
                     <button onClick={() => handleBtn('read-book')} className="btn text-lg font-semibold bg-[#23BE0A] text-white mr-6">Read</button>
-                    <button onClick={() => handleBtn('wish-book')} className="btn text-lg font-semibold bg-[#59C6D2] text-white">Wishlist</button>
+                    <button onClick={() => handleBtn('wish-book')} className="btn text-lg font-semibold bg-[#59C6D2] text-white  mr-6">Wishlist</button>
+                    <button onClick={() => navigate(-1)} className="btn bg-blue-500 text-white ">Go back</button>
                 </div>
             </div>
             <ToastContainer />
