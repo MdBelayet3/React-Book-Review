@@ -25,12 +25,13 @@ const router = createBrowserRouter([
       },
       {
         path: '/listed-books',
-        element: <ListedBooks></ListedBooks>
+        element: <ListedBooks></ListedBooks>,
+        loader: () => fetch('books_data.json'), //warning : Not a good way to display one data from many data
       },
       {
         path: '/book/:id',
         element: <BookDetails></BookDetails>,
-        loader: () => fetch('books_data.json')
+        loader: () => fetch('books_data.json') //warning : Not a good way to display one data from many data
       }
     ]
   },

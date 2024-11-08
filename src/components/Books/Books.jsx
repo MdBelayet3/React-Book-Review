@@ -8,7 +8,7 @@ const Books = () => {
         fetch('books_data.json')
         .then(res => res.json())
         .then(data => setBooks(data));
-    },[])
+    },[books])
     console.log(books)
 
     return (

@@ -1,14 +1,14 @@
 
 
-const getBookFromStoredCard = (para) =>{
-   const storedBook = localStorage.getItem(para);
+const getBookFromStoredCard = (keyName) =>{
+   const storedBook = localStorage.getItem(keyName);
    if(storedBook){
     return JSON.parse(storedBook);
    }
    return [];
 }
-const saveBookToStoredCard = (intId, keyName) =>{ //3
-    const storedBook = getBookFromStoredCard(keyName); //2,3,5
+const saveBookToStoredCard = (intId, keyName) =>{ 
+    const storedBook = getBookFromStoredCard(keyName); 
     const remaining = storedBook.find(book => book === intId);
     if(!remaining){
         storedBook.push(intId);
