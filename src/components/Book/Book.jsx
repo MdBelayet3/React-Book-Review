@@ -25,6 +25,7 @@ const Book = ({ book }) => {
                 </div>
             </div>
         </Link>
+        <h2></h2>
     );
 };
 
